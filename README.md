@@ -5,6 +5,7 @@
 Welcome to my personal learning journey with Laravel! 👩‍💻 In this repository, I am actively building and iterating on a blog to deepen my understanding of the Laravel framework and enhance my coding skills.
 
 Project Goals:
+
 🌐 Understand Laravel: Explore the workings of Laravel, one of the most powerful PHP frameworks, and grasp its key concepts.
 
 💡 Practice & Application: Apply theoretical knowledge by working on real-world scenarios, implementing best practices, and refining coding skills.
@@ -19,3 +20,5 @@ Technologies & Concepts:
 - Databases
 - Docker
 - and more...
+
+ Huge Thanks to <a href="https://laracasts.com/">Laracasts</a>!
