@@ -19,6 +19,7 @@ Technologies & Concepts:
 - MVC Architecture
 - Databases
 - Docker
+- TailwindCSS
 - and more...
 
  Huge Thanks to <a href="https://laracasts.com/">Laracasts</a>!
