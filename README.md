@@ -20,6 +20,7 @@ Technologies & Concepts:
 - Databases
 - Docker
 - TailwindCSS
+- AlpineJS
 - and more...
 
  Huge Thanks to <a href="https://laracasts.com/">Laracasts</a>!
