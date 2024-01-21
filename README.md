@@ -24,3 +24,5 @@ Technologies & Concepts:
 - and more...
 
  Huge Thanks to <a href="https://laracasts.com/">Laracasts</a>!
+
+LinkedIn Profile: https://www.linkedin.com/in/pavan-s-786993297
