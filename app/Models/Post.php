@@ -17,13 +17,26 @@ class Post extends Model
     public function scopeFilter($query, array $filters)
     {
         $search = $filters['search'] ?? false;
-        
+        $category = $filters['category'] ?? false;
+        $author = $filters['author'] ?? false;
+
         $query
-            ->when($search, function ($query, $search) {
-                $query
-                    ->where('title', 'like', '%' . $search . '%')
-                    ->orWhere('body', 'like', '%' . $search . '%');
-            });
+            ->when($search, fn ($query, $search) =>
+                $query->where(fn($query) =>
+                    $query->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('body', 'like', '%' . $search . '%')
+                )
+            );
+
+        $query
+            ->when($category, fn($query, $category) =>
+                $query->whereHas('category', fn($query)=> 
+                $query->where('slug', $category)));
+
+        $query
+            ->when($author, fn($query, $author) =>
+                $query->whereHas('author', fn($query)=> 
+                $query->where('username', $author)));
     }
 
     public function category()
